@@ -53,4 +53,7 @@ public class PictureController {
 			return JsonUtils.objectToJson(result);
 		}
 	}
+
+
+
 }

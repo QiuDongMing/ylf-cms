@@ -11,9 +11,8 @@
     <artifactId>e3-manager-web</artifactId>
     <groupId>com.qdm</groupId>
     <packaging>war</packaging>
-    <name>e3-manager-web Maven Webapp</name>
+    <name>e3-manager-web</name>
     <url>http://maven.apache.org</url>
-
 
     <dependencies>
         <dependency>
@@ -123,7 +122,6 @@
                 </includes>
             </resource>
         </resources>
-
 
         <finalName>e3-manager-web</finalName>
         <plugins>
