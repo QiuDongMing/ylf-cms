@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
         <artifactId>e3-manager</artifactId>
-        <groupId>qdm.qdm</groupId>
+        <groupId>com.qdm</groupId>
         <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -76,6 +76,32 @@
             <groupId>com.github.sgroschupf</groupId>
             <artifactId>zkclient</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-all</artifactId>
+        </dependency>
+
+        <!--
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-core</artifactId>
+            <version>5.7.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-pool</artifactId>
+            <version>5.11.2</version>
+        </dependency>
+        -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+
     </dependencies>
 
     <build>

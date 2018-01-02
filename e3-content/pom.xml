@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>e3-parent</artifactId>
-        <groupId>qdm.qdm</groupId>
+        <groupId>com.qdm</groupId>
         <version>1.0</version>
     </parent>
 
@@ -56,7 +56,7 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <configuration>
                     <path>/</path>
-                    <port>8083</port>
+                    <port>8087</port>
                 </configuration>
             </plugin>
         </plugins>

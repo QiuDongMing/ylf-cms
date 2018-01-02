@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>qdm.qdm</groupId>
+    <groupId>com.qdm</groupId>
     <artifactId>e3-parent</artifactId>
     <version>1.0</version>
     <modules>
@@ -13,6 +13,11 @@
         <module>e3-manager</module>
         <module>e3-manager-web</module>
         <module>e3-portal-web</module>
+        <module>e3-search</module>
+        <module>e3-search-web</module>
+        <module>e3-item-web</module>
+        <module>e3-sso</module>
+        <module>e3-sso-web</module>
     </modules>
     <packaging>pom</packaging>
 

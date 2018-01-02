@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>e3-parent</artifactId>
-        <groupId>qdm.qdm</groupId>
+        <groupId>com.qdm</groupId>
         <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -80,6 +80,12 @@
         <dependency>
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <scope>provided</scope>
         </dependency>
 
     </dependencies>
