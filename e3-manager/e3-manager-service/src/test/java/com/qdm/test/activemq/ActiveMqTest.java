@@ -1,18 +1,8 @@
 package com.qdm.test.activemq;
-import org.junit.Test;
-import javax.jms.Connection;
-import javax.jms.ConnectionFactory;
-import javax.jms.JMSException;
-import javax.jms.Message;
-import javax.jms.MessageConsumer;
-import javax.jms.MessageListener;
-import javax.jms.MessageProducer;
-import javax.jms.Queue;
-import javax.jms.Session;
-import javax.jms.TextMessage;
-import javax.jms.Topic;
-
 import org.apache.activemq.ActiveMQConnectionFactory;
+import org.junit.Test;
+
+import javax.jms.*;
 
 /**
  * @author QiuDongMing 2017年12月27日 15:34
@@ -29,7 +19,7 @@ public class ActiveMqTest {
     @Test
     public void testQueueProducer() throws Exception {
         //1、创建一个连接工厂对象，需要指定服务的ip及端口。
-        ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://192.168.1.178:61616");
+        ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://192.168.1.224:61616");
         //2、使用工厂对象创建一个Connection对象。
         Connection connection = connectionFactory.createConnection();
         //3、开启连接，调用Connection对象的start方法。
@@ -57,7 +47,7 @@ public class ActiveMqTest {
     @Test
     public void testQueueConsumer() throws Exception {
         //创建一个ConnectionFactory对象连接MQ服务器
-        ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://192.168.1.178:61616");
+        ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://192.168.1.224:61616");
         //创建一个连接对象
         Connection connection = connectionFactory.createConnection();
         //开启连接
@@ -96,7 +86,7 @@ public class ActiveMqTest {
     @Test
     public void testTopicProducer() throws Exception {
         //1、创建一个连接工厂对象，需要指定服务的ip及端口。
-        ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://192.168.1.178:61616");
+        ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://192.168.1.224:61616");
         //2、使用工厂对象创建一个Connection对象。
         Connection connection = connectionFactory.createConnection();
         //3、开启连接，调用Connection对象的start方法。
@@ -124,7 +114,7 @@ public class ActiveMqTest {
     @Test
     public void testTopicConsumer() throws Exception {
         //创建一个ConnectionFactory对象连接MQ服务器
-        ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://192.168.1.178:61616");
+        ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://192.168.1.224:61616");
         //创建一个连接对象
         Connection connection = connectionFactory.createConnection();
         //开启连接

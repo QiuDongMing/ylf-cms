@@ -15,7 +15,7 @@ public class TestSolr {
     public void addDocument() throws Exception {
         // 第一步：把solrJ的jar包添加到工程中。
         // 第二步：创建一个SolrServer，使用HttpSolrServer创建对象。
-        SolrServer solrServer = new HttpSolrServer("http://192.168.1.178:8585/solr");
+        SolrServer solrServer = new HttpSolrServer("http://192.168.1.224:8585/solr");
         // 第三步：创建一个文档对象SolrInputDocument对象。
         SolrInputDocument document = new SolrInputDocument();
         // 第四步：向文档中添加域。必须有id域，域的名称必须在schema.xml中定义。

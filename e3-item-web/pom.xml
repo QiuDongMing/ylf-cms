@@ -103,7 +103,7 @@
         <artifactId>tomcat7-maven-plugin</artifactId>
         <configuration>
           <path>/</path>
-          <port>8787</port>
+          <port>8086</port>
         </configuration>
       </plugin>
     </plugins>
